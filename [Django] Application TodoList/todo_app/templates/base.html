@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Required Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Simple.css-->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>My Personal ToDo Lists</title>
+  </head>
+  <body>
+
+      <div>
+        <h1 onclick="location.href='{% url "index" %}'">
+          Django To-do Lists
+        </h1>
+      </div>
+
+      <div>
+        {% block content %}
+        This content is temporary.
+        {% endblock %}
+      </div>
+
+  </body>
+</html>
